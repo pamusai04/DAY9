@@ -1,0 +1,39 @@
+Question 3
+//3.Use a constructor and repeat
+
+
+import java.lang.Math;
+class Cylinder {
+	private int height;
+	private int radius;
+	public Cylinder(int radius,int height ){
+		this.radius=radius;
+		this.height=height;
+	}
+	public int getRadius(){
+		return radius;
+	}
+	public int getHeight(){
+		return height;
+	}
+	public double surfaceArea(){
+		return 2*Math.PI* radius *radius + 2*Math.PI*radius*height;
+	}
+	public double volume(){
+		return Math.PI* radius *radius * height;
+	}
+}
+
+
+class DAY9_PQ3  {
+    public static void main(String[] args) {
+        Cylinder myCylinder = new Cylinder(9,12);
+   
+        System.out.println(myCylinder.getHeight());
+	System.out.println(myCylinder.getRadius());
+
+	System.out.println(myCylinder.surfaceArea());
+	System.out.println(myCylinder.volume());
+	
+    }
+}

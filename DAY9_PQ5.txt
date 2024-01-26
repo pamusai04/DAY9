@@ -1,0 +1,30 @@
+Question 5
+//5.Repeat 1 for a spere
+//1. create a class cylinder and use getters and setters to set radius and height
+
+import java.lang.Math;
+class Sphere {
+	private int radius;
+
+	public void setRadius(int radius ){
+		this.radius=radius;
+	}
+	public double surfaceArea(){
+		return 4*Math.PI* radius *radius ;
+	}
+	public double volume(){
+		return (4.0/3.0)*Math.PI* radius *radius * radius;
+	}
+}
+
+
+class DAY9_PQ5  {
+    public static void main(String[] args) {
+        Sphere s = new Sphere();
+     
+	s.setRadius(9);
+	System.out.println(s.surfaceArea());
+	System.out.println(s.volume());
+	
+    }
+}
